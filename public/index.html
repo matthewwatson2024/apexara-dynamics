@@ -3,462 +3,716 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Apexara Dynamics — Precision Aerial Intelligence</title>
-  <meta name="description" content="Apexara Dynamics delivers cutting-edge drone technology, precision aerial intelligence, and transformative data solutions for industries demanding the extraordinary." />
+  <title>Apexara Dynamics — Advanced UAV Systems</title>
+  <meta name="description" content="Apexara Dynamics engineers, assembles, and deploys advanced UAV systems for defense, ISR, and autonomous operations. Purpose-built for the modern battlespace." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="loading">
 
-  <!-- Navigation -->
+  <!-- ── PAGE LOADER ─────────────────────────────────────────────────────────── -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-core">
+      <div class="loader-ring"></div>
+      <div class="loader-glyph">▲</div>
+    </div>
+    <div class="loader-label">APEXARA DYNAMICS</div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <div class="loader-status">INITIALIZING SYSTEMS…</div>
+  </div>
+
+  <!-- ── NAVIGATION ─────────────────────────────────────────────────────────── -->
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
-        <span class="logo-mark">▲</span>
-        <span class="logo-text">APEXARA<em>DYNAMICS</em></span>
+        <span class="logo-glyph">▲</span>
+        <div class="logo-text-wrap">
+          <span class="logo-primary">APEXARA</span>
+          <span class="logo-secondary">DYNAMICS</span>
+        </div>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#overview" class="nav-link">Overview</a></li>
-        <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
-        <li><a href="#technology" class="nav-link">Technology</a></li>
-        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#identity" class="nav-link"><em>01</em> Profile</a></li>
+        <li><a href="#fleet" class="nav-link"><em>02</em> Fleet</a></li>
+        <li><a href="#capabilities" class="nav-link"><em>03</em> Capabilities</a></li>
+        <li><a href="#technology" class="nav-link"><em>04</em> Technology</a></li>
+        <li><a href="#gallery" class="nav-link"><em>05</em> Gallery</a></li>
         <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
       </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- ── HERO ───────────────────────────────────────────────────────────────── -->
   <section id="hero">
-    <canvas id="heroCanvas"></canvas>
-    <div class="hero-bg" style="background-image: url('images/pexels-eric-santoyo-232743-739410.jpg')"></div>
-    <div class="hero-overlay"></div>
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+
+    <div class="hero-media">
+      <img src="images/pexels-eric-santoyo-232743-739410.jpg"
+           alt="Advanced drone in flight operations"
+           fetchpriority="high" />
+      <div class="hero-media-overlay"></div>
+    </div>
+
+    <div class="hero-meta" aria-hidden="true">
+      <span id="heroTime">--:--:-- UTC</span>
+      <span class="hero-meta-sep">·</span>
+      <span>38.895° N  77.036° W</span>
+    </div>
+
     <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Precision Aerial Intelligence
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        Advanced UAV Systems
       </div>
+
       <h1 class="hero-title">
-        <span class="line line-1">Beyond the</span>
-        <span class="line line-2">Horizon</span>
+        <span class="ht-row ht-sm">Precision</span>
+        <span class="ht-row ht-xl ht-serif">Aerial</span>
+        <span class="ht-row ht-xl ht-bold">Supremacy</span>
       </h1>
-      <p class="hero-subtitle">
-        We engineer the future of autonomous aerial systems—where<br>
-        machine intelligence meets uncompromising precision.
+
+      <p class="hero-sub">
+        Next-generation drone assembly, modular autonomy software,<br>
+        and defense-grade UAV integration — built for the modern battlespace.
       </p>
+
       <div class="hero-actions">
-        <a href="#capabilities" class="btn-primary">Explore Capabilities</a>
-        <a href="#contact" class="btn-ghost">Engage With Us</a>
+        <a href="#fleet" class="btn-electric magnetic">
+          <span>Explore Fleet</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn-ghost magnetic">
+          <span>Request Brief</span>
+        </a>
       </div>
     </div>
-    <div class="hero-scroll-indicator">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-    <div class="hero-stats">
-      <div class="stat-item">
-        <span class="stat-number">340+</span>
-        <span class="stat-label">Missions Completed</span>
+
+    <div class="hero-metrics" aria-label="Key statistics">
+      <div class="metric">
+        <span class="metric-val" data-count="340">0</span><span class="metric-unit">+</span>
+        <span class="metric-label">Platforms Deployed</span>
       </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-number">99.7%</span>
-        <span class="stat-label">Mission Success Rate</span>
+      <div class="metric-sep"></div>
+      <div class="metric">
+        <span class="metric-val" data-count="99" data-dec="1">0</span><span class="metric-unit">%</span>
+        <span class="metric-label">Mission Success</span>
       </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-number">48</span>
-        <span class="stat-label">Countries Served</span>
+      <div class="metric-sep"></div>
+      <div class="metric">
+        <span class="metric-val" data-count="6">0</span>
+        <span class="metric-label">Platform Classes</span>
       </div>
     </div>
+
+    <div class="hero-scroll" aria-label="Scroll to explore">
+      <div class="scroll-track"><div class="scroll-thumb"></div></div>
+      <span>SCROLL</span>
+    </div>
+
   </section>
 
-  <!-- Ticker -->
-  <div class="ticker-wrap">
-    <div class="ticker">
-      <span>Autonomous Systems</span>
-      <span class="ticker-dot">✦</span>
-      <span>Precision Mapping</span>
-      <span class="ticker-dot">✦</span>
-      <span>AI-Powered Analytics</span>
-      <span class="ticker-dot">✦</span>
-      <span>Real-Time Intelligence</span>
-      <span class="ticker-dot">✦</span>
-      <span>Enterprise Solutions</span>
-      <span class="ticker-dot">✦</span>
-      <span>Defense Grade</span>
-      <span class="ticker-dot">✦</span>
-      <span>Autonomous Systems</span>
-      <span class="ticker-dot">✦</span>
-      <span>Precision Mapping</span>
-      <span class="ticker-dot">✦</span>
-      <span>AI-Powered Analytics</span>
-      <span class="ticker-dot">✦</span>
-      <span>Real-Time Intelligence</span>
-      <span class="ticker-dot">✦</span>
-      <span>Enterprise Solutions</span>
-      <span class="ticker-dot">✦</span>
-      <span>Defense Grade</span>
-      <span class="ticker-dot">✦</span>
+  <!-- ── MARQUEE ─────────────────────────────────────────────────────────────── -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <span>ISR Platforms</span><span class="mdot">◆</span>
+        <span>Loitering Munitions</span><span class="mdot">◆</span>
+        <span>UCAV Integration</span><span class="mdot">◆</span>
+        <span>Modular Autonomy</span><span class="mdot">◆</span>
+        <span>MUM-T Systems</span><span class="mdot">◆</span>
+        <span>ITAR Compliant</span><span class="mdot">◆</span>
+        <span>Group 3 / Group 4</span><span class="mdot">◆</span>
+        <span>SK-Sourced OEM</span><span class="mdot">◆</span>
+        <span>ROS2 Autonomy</span><span class="mdot">◆</span>
+        <span>Defense Grade</span><span class="mdot">◆</span>
+        <span>ISR Platforms</span><span class="mdot">◆</span>
+        <span>Loitering Munitions</span><span class="mdot">◆</span>
+        <span>UCAV Integration</span><span class="mdot">◆</span>
+        <span>Modular Autonomy</span><span class="mdot">◆</span>
+        <span>MUM-T Systems</span><span class="mdot">◆</span>
+        <span>ITAR Compliant</span><span class="mdot">◆</span>
+        <span>Group 3 / Group 4</span><span class="mdot">◆</span>
+        <span>SK-Sourced OEM</span><span class="mdot">◆</span>
+        <span>ROS2 Autonomy</span><span class="mdot">◆</span>
+        <span>Defense Grade</span><span class="mdot">◆</span>
+      </div>
     </div>
   </div>
 
-  <!-- Overview Section -->
-  <section id="overview">
+  <!-- ── IDENTITY ────────────────────────────────────────────────────────────── -->
+  <section id="identity">
     <div class="container">
-      <div class="overview-grid">
-        <div class="overview-visual">
-          <div class="img-frame">
-            <img src="images/pexels-bohlemedia-2050718.jpg" alt="Drone in flight over terrain" loading="lazy" />
-            <div class="img-caption">
-              <span>FPV-7X Platform</span>
-              <span>Advanced Reconnaissance</span>
-            </div>
+      <div class="identity-grid">
+
+        <div class="identity-media reveal">
+          <div class="media-frame">
+            <img src="images/pexels-bohlemedia-2050718.jpg" alt="Drone in operational flight" loading="lazy" />
+            <div class="media-scan" aria-hidden="true"></div>
           </div>
-          <div class="overview-accent-card">
-            <span class="accent-number">2018</span>
-            <span class="accent-label">Founded with a vision to redefine aerial intelligence</span>
-          </div>
-        </div>
-        <div class="overview-content">
-          <div class="section-label">Who We Are</div>
-          <h2 class="section-title">Engineering <em>Excellence</em><br>From Above</h2>
-          <p class="body-text">
-            Apexara Dynamics is a technology-first aerospace company at the vanguard of autonomous aerial systems. We design, build, and deploy next-generation drone platforms that operate at the edge of what is technically possible.
-          </p>
-          <p class="body-text">
-            Our work spans industries where failure is not an option—defense, critical infrastructure, precision agriculture, and enterprise logistics. Each system we engineer is a testament to obsessive craftsmanship and rigorous validation.
-          </p>
-          <div class="overview-pillars">
-            <div class="pillar">
-              <div class="pillar-icon">◈</div>
-              <div>
-                <h4>Unmatched Reliability</h4>
-                <p>Triple-redundant systems engineered for the most demanding operational environments on earth.</p>
-              </div>
-            </div>
-            <div class="pillar">
-              <div class="pillar-icon">◈</div>
-              <div>
-                <h4>Proprietary Intelligence</h4>
-                <p>In-house AI stack processing real-time telemetry at sub-millisecond latency.</p>
-              </div>
-            </div>
-            <div class="pillar">
-              <div class="pillar-icon">◈</div>
-              <div>
-                <h4>Global Deployment</h4>
-                <p>Rapid deployment capability to any location on earth within 72 hours of activation.</p>
-              </div>
-            </div>
+          <div class="identity-badge reveal reveal-delay-2">
+            <div class="badge-rule"></div>
+            <span class="badge-mono">EST. 2018</span>
+            <p>Founded to address critical U.S. defense gaps in attritable UAV supply</p>
           </div>
         </div>
+
+        <div class="identity-content">
+          <div class="section-eyebrow reveal">01 — Profile</div>
+          <h2 class="section-heading reveal reveal-delay-1">
+            Rebuilding the<br><em>Future of Flight</em>
+          </h2>
+          <p class="body-copy reveal reveal-delay-2">
+            Apexara Dynamics (operating as AGMM Antiquities Inc.) sources disassembled South Korean–made UAV systems through vetted partner companies, assembles the airframes and avionics, and develops modular autonomy software integrable across a full spectrum of combat and defense platforms.
+          </p>
+          <p class="body-copy reveal reveal-delay-2">
+            Hardware refurbishment and software development are managed through certified subcontractors and partner firms, delivering finished platforms that meet the exacting requirements of U.S. military and government customers.
+          </p>
+
+          <div class="identity-pillars">
+            <div class="pillar-item reveal reveal-delay-1">
+              <div class="pillar-num">01</div>
+              <div class="pillar-body">
+                <h4>Cost-Efficient Rebuilds</h4>
+                <p>Surplus South Korean OEM platforms transformed into mission-ready systems at a fraction of new-build cost.</p>
+              </div>
+            </div>
+            <div class="pillar-item reveal reveal-delay-2">
+              <div class="pillar-num">02</div>
+              <div class="pillar-body">
+                <h4>Modular Autonomy</h4>
+                <p>Open ROS2 middleware stack connecting sensors, flight controllers, and AI algorithms across all platform classes.</p>
+              </div>
+            </div>
+            <div class="pillar-item reveal reveal-delay-3">
+              <div class="pillar-num">03</div>
+              <div class="pillar-body">
+                <h4>Vetted Supply Chain</h4>
+                <p>Partnerships with Giant Drone, UCONSYSTEM, KAI, Hanwha, and Doosan — Korea's premier defense manufacturers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Full-Screen Image Break 1 -->
-  <div class="fullscreen-image parallax-section" id="parallax1">
-    <div class="parallax-img" style="background-image: url('images/pexels-daniel-reche-718241-3722737.jpg')"></div>
-    <div class="fullscreen-overlay"></div>
-    <div class="fullscreen-text">
-      <blockquote>
-        "The altitude at which we operate is not measured in meters — it is measured in standards."
+  <!-- ── FLEET ───────────────────────────────────────────────────────────────── -->
+  <section id="fleet">
+    <div class="container">
+      <div class="fleet-header">
+        <div class="section-eyebrow reveal">02 — Platform Fleet</div>
+        <h2 class="section-heading reveal reveal-delay-1">Six Classes.<br><em>Zero Compromise.</em></h2>
+        <p class="section-sub reveal reveal-delay-2">Each platform sourced, assembled, and hardened to operational standards. Configurable for ISR, strike, logistics, and autonomous teaming missions.</p>
+      </div>
+
+      <div class="fleet-grid">
+
+        <div class="fleet-card reveal" data-platform="GD-D2">
+          <div class="fc-light" aria-hidden="true"></div>
+          <div class="fc-media">
+            <img src="images/pexels-emrahayvali-2073611.jpg" alt="GD-D2 Fixed-Wing Platform" loading="lazy" />
+            <div class="fc-overlay"></div>
+          </div>
+          <div class="fc-body">
+            <div class="fc-meta">
+              <span class="fc-index">01</span>
+              <span class="fc-group">Group 3</span>
+            </div>
+            <div class="fc-designation">GD-D2</div>
+            <div class="fc-role">Fixed-Wing ISR / Loitering</div>
+            <div class="fc-specs">
+              <div class="fcs-row">
+                <span class="fcs-label">Weight</span>
+                <span class="fcs-val">1,500 – 5,000 g</span>
+              </div>
+              <div class="fcs-row">
+                <span class="fcs-label">Endurance</span>
+                <span class="fcs-val">30 – 90 min</span>
+              </div>
+              <div class="fcs-row">
+                <span class="fcs-label">Mission</span>
+                <span class="fcs-val">ISR · Strike · Mapping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fleet-card reveal reveal-delay-1" data-platform="GD-X800">
+          <div class="fc-light" aria-hidden="true"></div>
+          <div class="fc-media">
+            <img src="images/pexels-daniel-reche-718241-3722737.jpg" alt="GD-X800 High-Speed Platform" loading="lazy" />
+            <div class="fc-overlay"></div>
+          </div>
+          <div class="fc-body">
+            <div class="fc-meta">
+              <span class="fc-index">02</span>
+              <span class="fc-group">Group 3</span>
+            </div>
+            <div class="fc-designation">GD-X800</div>
+            <div class="fc-role">High-Speed Fast Attack</div>
+            <div class="fc-specs">
+              <div class="fcs-row">
+                <span class="fcs-label">Weight</span>
+                <span class="fcs-val">800 – 1,500 g</span>
+              </div>
+              <div class="fcs-row">
+                <span class="fcs-label">Power</span>
+                <span class="fcs-val">500 – 3,000 W peak</span>
+              </div>
+              <div class="fcs-row">
+                <span class="fcs-label">Mission</span>
+                <span class="fcs-val">Strike · Attrit. Swarm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fleet-card reveal reveal-delay-2" data-platform="GD-1430">
+          <div class="fc-light" aria-hidden="true"></div>
+          <div class="fc-media">
+            <img src="images/pexels-jeshoots-com-147458-442587.jpg" alt="GD-1430 Multipurpose Platform" loading="lazy" />
+            <div class="fc-overlay"></div>
+          </div>
+          <div class="fc-body">
+            <div class="fc-meta">
+              <span class="fc-index">03</span>
+              <span class="fc-group">Group 3/4</span>
+            </div>
+            <div class="fc-designation">GD-1430</div>
+            <div class="fc-role">Multipurpose / Agriculture</div>
+            <div class="fc-specs">
+              <div class="fcs-row">
+                <span class="fcs-label">Weight</span>
+                <span class="fcs-val">3,000 – 9,000 g</span>
+              </div>
+              <div class="fcs-row">
+                <span class="fcs-label">Payload</span>
+                <span class="fcs-val">Spray · Seed · Sensor</span>
+              </div>
+              <div class="fcs-row">
+                <span class="fcs-label">Mission</span>
+                <span class="fcs-val">ISR · Ag · Loitering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fleet-card fleet-card-wide reveal" data-platform="DS30W">
+          <div class="fc-light" aria-hidden="true"></div>
+          <div class="fc-media">
+            <img src="images/pexels-peterfazekas-997122.jpg" alt="DS30W Hydrogen Multirotor" loading="lazy" />
+            <div class="fc-overlay"></div>
+          </div>
+          <div class="fc-body">
+            <div class="fc-meta">
+              <span class="fc-index">04</span>
+              <span class="fc-group">Group 4</span>
+            </div>
+            <div class="fc-designation">GD2-DS30W</div>
+            <div class="fc-role">Hydrogen Multirotor · Long Endurance</div>
+            <div class="fc-specs">
+              <div class="fcs-row">
+                <span class="fcs-label">Propulsion</span>
+                <span class="fcs-val">H₂ Fuel Cell</span>
+              </div>
+              <div class="fcs-row">
+                <span class="fcs-label">Class</span>
+                <span class="fcs-val">MALE — Group 4</span>
+              </div>
+              <div class="fcs-row">
+                <span class="fcs-label">Mission</span>
+                <span class="fcs-val">Persistent ISR · Logistics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fleet-card reveal reveal-delay-1" data-platform="LOWUS">
+          <div class="fc-light" aria-hidden="true"></div>
+          <div class="fc-media fc-media-dark">
+            <img src="images/pexels-kaandurmus-18054381.jpg" alt="LOWUS Stealth UCAV" loading="lazy" />
+            <div class="fc-overlay fc-overlay-red"></div>
+          </div>
+          <div class="fc-body">
+            <div class="fc-meta">
+              <span class="fc-index">05</span>
+              <span class="fc-group fc-group-red">UCAV-Class</span>
+            </div>
+            <div class="fc-designation">LOWUS</div>
+            <div class="fc-role">Stealth Loyal-Wingman / MUM-T</div>
+            <div class="fc-specs">
+              <div class="fcs-row">
+                <span class="fcs-label">Signature</span>
+                <span class="fcs-val">Low Observable</span>
+              </div>
+              <div class="fcs-row">
+                <span class="fcs-label">Integration</span>
+                <span class="fcs-val">KF-21 / KAI / Hanwha</span>
+              </div>
+              <div class="fcs-row">
+                <span class="fcs-label">Mission</span>
+                <span class="fcs-val">UCAV · Teaming · Stealth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fleet-card reveal reveal-delay-2" data-platform="Remo-M">
+          <div class="fc-light" aria-hidden="true"></div>
+          <div class="fc-media">
+            <img src="images/pexels-eric-santoyo-232743-739410.jpg" alt="Remo-M Fixed-Wing ISR" loading="lazy" />
+            <div class="fc-overlay"></div>
+          </div>
+          <div class="fc-body">
+            <div class="fc-meta">
+              <span class="fc-index">06</span>
+              <span class="fc-group">Group 3</span>
+            </div>
+            <div class="fc-designation">Remo-M</div>
+            <div class="fc-role">Long-Endurance Mapping / ISR</div>
+            <div class="fc-specs">
+              <div class="fcs-row">
+                <span class="fcs-label">Weight</span>
+                <span class="fcs-val">1,800 – 6,000 g</span>
+              </div>
+              <div class="fcs-row">
+                <span class="fcs-label">Build</span>
+                <span class="fcs-val">Hojung Solutions</span>
+              </div>
+              <div class="fcs-row">
+                <span class="fcs-label">Mission</span>
+                <span class="fcs-val">Mapping · ISR · Delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CINEMATIC BREAK 1 ────────────────────────────────────────────────────── -->
+  <div class="cinematic-break" id="break1">
+    <div class="cb-media">
+      <img src="images/pexels-daniel-reche-718241-3722737.jpg" alt="" aria-hidden="true" loading="lazy" />
+    </div>
+    <div class="cb-overlay"></div>
+    <div class="cb-content">
+      <div class="cb-rule"></div>
+      <blockquote class="cb-quote reveal">
+        "The altitude at which we operate is not measured in meters —<br>it is measured in standards."
       </blockquote>
-      <cite>— Apexara Dynamics, Mission Statement</cite>
+      <cite class="cb-cite reveal reveal-delay-1">Apexara Dynamics — Mission Statement</cite>
+      <div class="cb-rule"></div>
     </div>
   </div>
 
-  <!-- Capabilities Section -->
+  <!-- ── CAPABILITIES ─────────────────────────────────────────────────────────── -->
   <section id="capabilities">
     <div class="container">
-      <div class="section-header centered">
-        <div class="section-label">What We Do</div>
-        <h2 class="section-title">Core <em>Capabilities</em></h2>
-        <p class="section-intro">Seven disciplines. One operating principle: precision without compromise.</p>
+      <div class="section-header-split">
+        <div>
+          <div class="section-eyebrow reveal">03 — Capabilities</div>
+          <h2 class="section-heading reveal reveal-delay-1">What We<br><em>Deliver</em></h2>
+        </div>
+        <p class="section-sub section-sub-right reveal reveal-delay-2">
+          Four core disciplines. One operational imperative:<br>mission-ready systems, every time.
+        </p>
       </div>
-      <div class="capabilities-grid">
 
-        <div class="cap-card cap-featured">
+      <div class="cap-grid">
+
+        <div class="cap-card cap-card-featured reveal">
           <div class="cap-img">
-            <img src="images/pexels-emrahayvali-2073611.jpg" alt="Autonomous drone operations" loading="lazy" />
+            <img src="images/pexels-emrahayvali-2073611.jpg" alt="Autonomous systems operations" loading="lazy" />
           </div>
-          <div class="cap-body">
-            <span class="cap-number">01</span>
-            <h3>Autonomous Flight Systems</h3>
-            <p>End-to-end autonomous mission planning, execution, and recovery. Our platforms navigate complex terrain, adverse weather, and GPS-denied environments with unparalleled accuracy using sensor fusion and onboard SLAM.</p>
-            <a href="#contact" class="cap-link">Learn More <span>→</span></a>
+          <div class="cap-content">
+            <span class="cap-num">01</span>
+            <h3>Assembly &amp; Refurbishment</h3>
+            <p>We receive disassembled SK-made systems, assemble airframes and avionics, and deliver field-ready platforms. Every component is inspected against MIL-grade acceptance criteria.</p>
+            <a href="#contact" class="link-arrow">Engage <span>→</span></a>
           </div>
         </div>
 
-        <div class="cap-card">
-          <span class="cap-number">02</span>
-          <div class="cap-icon">⬡</div>
-          <h3>Precision Mapping & Surveying</h3>
-          <p>Photogrammetric and LiDAR-based mapping delivering centimeter-level accuracy across thousands of hectares in a single sortie.</p>
-          <a href="#contact" class="cap-link">Learn More <span>→</span></a>
+        <div class="cap-card reveal reveal-delay-1">
+          <span class="cap-num">02</span>
+          <div class="cap-icon-glyph">⬡</div>
+          <h3>Modular Autonomy Software</h3>
+          <p>ROS2-based middleware connecting sensors, PX4-compatible flight controllers, and AI inference stacks — portable across Group 3 through UCAV-class platforms.</p>
+          <a href="#contact" class="link-arrow">Engage <span>→</span></a>
         </div>
 
-        <div class="cap-card">
-          <span class="cap-number">03</span>
-          <div class="cap-icon">⬡</div>
-          <h3>AI-Powered Analytics</h3>
-          <p>Proprietary computer vision and machine learning models that transform raw aerial data into actionable intelligence within minutes of collection.</p>
-          <a href="#contact" class="cap-link">Learn More <span>→</span></a>
+        <div class="cap-card reveal reveal-delay-2">
+          <span class="cap-num">03</span>
+          <div class="cap-icon-glyph">⬡</div>
+          <h3>ISR &amp; Strike Integration</h3>
+          <p>EO/IR sensor integration, encrypted datalinks, and payload management for loitering munitions, expendable strikers, and persistent ISR missions in GPS-denied environments.</p>
+          <a href="#contact" class="link-arrow">Engage <span>→</span></a>
         </div>
 
-        <div class="cap-card">
-          <span class="cap-number">04</span>
-          <div class="cap-icon">⬡</div>
-          <h3>Defense & Security</h3>
-          <p>ITAR-compliant platforms engineered for persistent surveillance, perimeter monitoring, and tactical reconnaissance under the most demanding operational conditions.</p>
-          <a href="#contact" class="cap-link">Learn More <span>→</span></a>
+        <div class="cap-card reveal">
+          <span class="cap-num">04</span>
+          <div class="cap-icon-glyph">⬡</div>
+          <h3>UCAV &amp; MUM-T Systems</h3>
+          <p>Loyal-wingman integration via KAI and Hanwha Systems — AESA radar, EO/IR turrets, SIGINT payloads, encrypted C2 links, and manned-unmanned teaming for KF-21 operations.</p>
+          <a href="#contact" class="link-arrow">Engage <span>→</span></a>
         </div>
 
-        <div class="cap-card">
-          <span class="cap-number">05</span>
-          <div class="cap-icon">⬡</div>
-          <h3>Inspection & Monitoring</h3>
-          <p>Non-destructive inspection of critical infrastructure—powerlines, pipelines, bridges, and wind turbines—with automated defect detection and reporting.</p>
-          <a href="#contact" class="cap-link">Learn More <span>→</span></a>
+        <div class="cap-card reveal reveal-delay-1">
+          <span class="cap-num">05</span>
+          <div class="cap-icon-glyph">⬡</div>
+          <h3>Precision Agriculture &amp; Mapping</h3>
+          <p>Multispectral and LiDAR mapping systems with centimeter-level RTK accuracy. Agricultural spray and seed platforms converted from tactical airframes for dual-use operations.</p>
+          <a href="#contact" class="link-arrow">Engage <span>→</span></a>
         </div>
 
-        <div class="cap-card">
-          <span class="cap-number">06</span>
-          <div class="cap-icon">⬡</div>
-          <h3>Precision Agriculture</h3>
-          <p>Multispectral imaging, crop health analytics, and targeted application systems that maximize yield while minimizing resource consumption and environmental impact.</p>
-          <a href="#contact" class="cap-link">Learn More <span>→</span></a>
-        </div>
-
-        <div class="cap-card">
-          <span class="cap-number">07</span>
-          <div class="cap-icon">⬡</div>
-          <h3>Emergency Response</h3>
-          <p>Rapid-deploy systems for search and rescue, disaster assessment, and emergency logistics—operational in under four minutes from case deployment.</p>
-          <a href="#contact" class="cap-link">Learn More <span>→</span></a>
+        <div class="cap-card reveal reveal-delay-2">
+          <span class="cap-num">06</span>
+          <div class="cap-icon-glyph">⬡</div>
+          <h3>Logistics &amp; Delivery</h3>
+          <p>Long-endurance multirotors and fixed-wing platforms adapted for modular cargo, supply delivery, and persistent forward-area logistics in contested environments.</p>
+          <a href="#contact" class="link-arrow">Engage <span>→</span></a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- Split Image Section -->
+  <!-- ── TECHNOLOGY ───────────────────────────────────────────────────────────── -->
   <section id="technology">
     <div class="tech-split">
-      <div class="tech-image-col">
-        <div class="tech-img-stack">
-          <img src="images/pexels-jeshoots-com-147458-442587.jpg" alt="Drone technology close-up" loading="lazy" class="tech-img-main" />
-          <img src="images/pexels-kaandurmus-18054381.jpg" alt="Drone aerial perspective" loading="lazy" class="tech-img-accent" />
+      <div class="tech-media-col reveal">
+        <canvas id="circuitCanvas" aria-hidden="true"></canvas>
+        <div class="tech-img-primary">
+          <img src="images/pexels-jeshoots-com-147458-442587.jpg" alt="Drone technology components" loading="lazy" />
+        </div>
+        <div class="tech-img-accent reveal reveal-delay-2">
+          <img src="images/pexels-kaandurmus-18054381.jpg" alt="Aerial systems perspective" loading="lazy" />
         </div>
       </div>
       <div class="tech-content-col">
-        <div class="section-label">Our Technology</div>
-        <h2 class="section-title">Hardware Meets<br><em>Machine Intelligence</em></h2>
-        <p class="body-text">
-          Every Apexara platform begins life as a mathematical model—stress-tested in simulation across millions of edge cases before a single component is fabricated. Our vertical integration spans composite airframe manufacturing, custom flight controller silicon, and the AI inference stack running on our proprietary NPU.
+        <div class="section-eyebrow reveal">04 — Technology</div>
+        <h2 class="section-heading reveal reveal-delay-1">
+          Rugged Grade<br><em>Component Architecture</em>
+        </h2>
+        <p class="body-copy reveal reveal-delay-2">
+          Every platform integrates a field-proven stack: PX4-compatible autopilots, ROS2 mission computers, VectorNav / Septentrio navigation, Persistent Systems encrypted datalinks, and FLIR/Hanwha EO/IR payloads — with MIL-grade alternatives at every tier.
         </p>
-        <div class="tech-specs">
-          <div class="spec-row">
-            <span class="spec-label">Max Flight Duration</span>
-            <div class="spec-bar-wrap">
-              <div class="spec-bar" data-width="92%"></div>
-            </div>
-            <span class="spec-value">92 min</span>
+        <div class="tech-stack reveal reveal-delay-2">
+          <div class="ts-row">
+            <span class="ts-label">Flight Control</span>
+            <div class="ts-bar-wrap"><div class="ts-bar" data-w="88"></div></div>
+            <span class="ts-tag">CubePilot · Auterion</span>
           </div>
-          <div class="spec-row">
-            <span class="spec-label">Payload Capacity</span>
-            <div class="spec-bar-wrap">
-              <div class="spec-bar" data-width="78%"></div>
-            </div>
-            <span class="spec-value">12.4 kg</span>
+          <div class="ts-row">
+            <span class="ts-label">Navigation (INS/GNSS)</span>
+            <div class="ts-bar-wrap"><div class="ts-bar" data-w="94"></div></div>
+            <span class="ts-tag">VectorNav · Septentrio</span>
           </div>
-          <div class="spec-row">
-            <span class="spec-label">Operational Range</span>
-            <div class="spec-bar-wrap">
-              <div class="spec-bar" data-width="85%"></div>
-            </div>
-            <span class="spec-value">85 km</span>
+          <div class="ts-row">
+            <span class="ts-label">Datalink / C2</span>
+            <div class="ts-bar-wrap"><div class="ts-bar" data-w="82"></div></div>
+            <span class="ts-tag">Persistent Sys · L3Harris</span>
           </div>
-          <div class="spec-row">
-            <span class="spec-label">Wind Resistance</span>
-            <div class="spec-bar-wrap">
-              <div class="spec-bar" data-width="70%"></div>
-            </div>
-            <span class="spec-value">70 km/h</span>
+          <div class="ts-row">
+            <span class="ts-label">EO/IR Payload</span>
+            <div class="ts-bar-wrap"><div class="ts-bar" data-w="91"></div></div>
+            <span class="ts-tag">FLIR · Hanwha · WESCAM</span>
           </div>
-          <div class="spec-row">
-            <span class="spec-label">AI Inference Speed</span>
-            <div class="spec-bar-wrap">
-              <div class="spec-bar" data-width="96%"></div>
-            </div>
-            <span class="spec-value">&lt;4 ms</span>
+          <div class="ts-row">
+            <span class="ts-label">Mission Computer</span>
+            <div class="ts-bar-wrap"><div class="ts-bar" data-w="79"></div></div>
+            <span class="ts-tag">NVIDIA Jetson · Curtiss-Wright</span>
           </div>
         </div>
-        <a href="#contact" class="btn-primary">Request Technical Brief</a>
+        <a href="#contact" class="btn-electric magnetic reveal reveal-delay-3">
+          <span>Request Technical Brief</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Gallery Section -->
+  <!-- ── GALLERY ──────────────────────────────────────────────────────────────── -->
   <section id="gallery">
-    <div class="gallery-header container">
-      <div class="section-label">Visual Intelligence</div>
-      <h2 class="section-title">Seen From <em>Above</em></h2>
+    <div class="container">
+      <div class="gallery-header">
+        <div class="section-eyebrow reveal">05 — Visual Intelligence</div>
+        <h2 class="section-heading reveal reveal-delay-1">Seen From <em>Above</em></h2>
+      </div>
     </div>
-    <div class="gallery-masonry">
-      <div class="gallery-item gallery-item-tall">
-        <img src="images/pexels-peterfazekas-997122.jpg" alt="Aerial landscape perspective" loading="lazy" />
-        <div class="gallery-caption">
+    <div class="gallery-grid">
+      <div class="gi gi-tall reveal">
+        <img src="images/pexels-peterfazekas-997122.jpg" alt="Terrain mapping operations" loading="lazy" />
+        <div class="gi-caption">
           <span>Terrain Mapping</span>
-          <p>Lidar-assisted 3D terrain reconstruction at 2cm resolution</p>
+          <p>LiDAR-assisted 3D reconstruction at 2 cm resolution</p>
         </div>
       </div>
-      <div class="gallery-item">
-        <img src="images/pexels-eric-santoyo-232743-739410.jpg" alt="Drone flight operations" loading="lazy" />
-        <div class="gallery-caption">
+      <div class="gi reveal reveal-delay-1">
+        <img src="images/pexels-bohlemedia-2050718.jpg" alt="Drone in active flight" loading="lazy" />
+        <div class="gi-caption">
           <span>Active Operations</span>
           <p>Real-time mission execution in complex airspace</p>
         </div>
       </div>
-      <div class="gallery-item">
-        <img src="images/pexels-kaandurmus-18054381.jpg" alt="High altitude drone perspective" loading="lazy" />
-        <div class="gallery-caption">
+      <div class="gi reveal reveal-delay-2">
+        <img src="images/pexels-emrahayvali-2073611.jpg" alt="Autonomous systems" loading="lazy" />
+        <div class="gi-caption">
+          <span>Autonomous Flight</span>
+          <p>GPS-denied SLAM navigation in structured environments</p>
+        </div>
+      </div>
+      <div class="gi reveal">
+        <img src="images/pexels-kaandurmus-18054381.jpg" alt="High altitude perspective" loading="lazy" />
+        <div class="gi-caption">
           <span>High-Altitude Survey</span>
-          <p>Beyond visual line of sight operations at 1,200m AGL</p>
+          <p>BLOS operations at 1,200m AGL with SATCOM relay</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Full-Screen Parallax Image 2 -->
-  <div class="fullscreen-image parallax-section" id="parallax2">
-    <div class="parallax-img" style="background-image: url('images/pexels-peterfazekas-997122.jpg')"></div>
-    <div class="fullscreen-overlay dark-overlay"></div>
-    <div class="cta-overlay container">
-      <h2>Ready to Elevate Your Operations?</h2>
-      <p>Join the organizations that have made aerial intelligence their decisive advantage.</p>
-      <a href="#contact" class="btn-primary btn-large">Start the Conversation</a>
+  <!-- ── CINEMATIC BREAK 2 ─────────────────────────────────────────────────────── -->
+  <div class="cinematic-break cinematic-cta" id="break2">
+    <div class="cb-media">
+      <img src="images/pexels-peterfazekas-997122.jpg" alt="" aria-hidden="true" loading="lazy" />
+    </div>
+    <div class="cb-overlay cb-overlay-deep"></div>
+    <div class="cb-cta-content container">
+      <h2 class="reveal">Ready to Elevate<br><em>Your Operations?</em></h2>
+      <p class="reveal reveal-delay-1">Join the organizations that have made aerial intelligence their decisive advantage.</p>
+      <a href="#contact" class="btn-electric btn-electric-lg magnetic reveal reveal-delay-2">
+        <span>Start the Conversation</span>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9h11M10 4.5L14.5 9 10 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
     </div>
   </div>
 
-  <!-- Contact Section -->
+  <!-- ── CONTACT ──────────────────────────────────────────────────────────────── -->
   <section id="contact">
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info">
-          <div class="section-label">Get in Touch</div>
-          <h2 class="section-title">Let's Build<br><em>Something Extraordinary</em></h2>
-          <p class="body-text">
-            Whether you're evaluating a specific use case, seeking a strategic partnership, or simply curious about what's possible—we want to hear from you.
+          <div class="section-eyebrow reveal">06 — Get in Touch</div>
+          <h2 class="section-heading reveal reveal-delay-1">Let's Build<br><em>Something Extraordinary</em></h2>
+          <p class="body-copy reveal reveal-delay-2">
+            Whether you're evaluating a specific platform, seeking a procurement partnership, or requesting a classified technical brief — we want to hear from you.
           </p>
           <div class="contact-details">
-            <div class="contact-detail">
-              <span class="detail-icon">◎</span>
-              <div>
+            <div class="cd-item reveal">
+              <div class="cd-icon">◎</div>
+              <div class="cd-body">
                 <strong>Headquarters</strong>
-                <p>1 Apexara Way, Suite 1200<br>San Francisco, CA 94105</p>
+                <p>1 Apexara Way, Suite 1200<br>Arlington, VA 22201</p>
               </div>
             </div>
-            <div class="contact-detail">
-              <span class="detail-icon">◎</span>
-              <div>
+            <div class="cd-item reveal reveal-delay-1">
+              <div class="cd-icon">◎</div>
+              <div class="cd-body">
                 <strong>General Inquiries</strong>
                 <p>contact@apexaradynamics.com</p>
               </div>
             </div>
-            <div class="contact-detail">
-              <span class="detail-icon">◎</span>
-              <div>
-                <strong>Defense & Government</strong>
+            <div class="cd-item reveal reveal-delay-2">
+              <div class="cd-icon">◎</div>
+              <div class="cd-body">
+                <strong>Defense &amp; Government</strong>
                 <p>defense@apexaradynamics.com</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="contact-form-wrap">
+
+        <div class="contact-form-wrap reveal reveal-delay-1">
           <form id="contactForm" novalidate>
             <div class="form-row">
               <div class="form-field">
                 <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" placeholder="Alexandra" required />
+                <input type="text" id="firstName" name="firstName" placeholder="Alexandra" required autocomplete="given-name" />
               </div>
               <div class="form-field">
                 <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Chen" required />
+                <input type="text" id="lastName" name="lastName" placeholder="Chen" required autocomplete="family-name" />
               </div>
             </div>
             <div class="form-field">
               <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="alexandra@organization.com" required />
+              <input type="email" id="email" name="email" placeholder="alexandra@organization.com" required autocomplete="email" />
             </div>
             <div class="form-field">
               <label for="organization">Organization</label>
-              <input type="text" id="organization" name="organization" placeholder="Your organization name" />
+              <input type="text" id="organization" name="organization" placeholder="Your organization" autocomplete="organization" />
             </div>
             <div class="form-field">
               <label for="inquiry">Area of Interest</label>
               <select id="inquiry" name="inquiry">
                 <option value="" disabled selected>Select an area</option>
-                <option value="autonomous">Autonomous Systems</option>
-                <option value="mapping">Precision Mapping</option>
-                <option value="analytics">AI Analytics</option>
-                <option value="defense">Defense & Security</option>
+                <option value="assembly">Platform Assembly &amp; Refurbishment</option>
+                <option value="autonomy">Modular Autonomy Software</option>
+                <option value="isr">ISR &amp; Strike Integration</option>
+                <option value="ucav">UCAV / MUM-T Systems</option>
                 <option value="agriculture">Precision Agriculture</option>
-                <option value="inspection">Infrastructure Inspection</option>
+                <option value="logistics">Logistics &amp; Delivery</option>
                 <option value="partnership">Strategic Partnership</option>
                 <option value="other">Other</option>
               </select>
             </div>
             <div class="form-field">
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Describe your challenge or objective..." required></textarea>
+              <textarea id="message" name="message" rows="5" placeholder="Describe your challenge or objective…" required></textarea>
             </div>
-            <button type="submit" class="btn-primary btn-submit">
+            <button type="submit" class="btn-submit magnetic">
               <span class="btn-text">Send Inquiry</span>
-              <span class="btn-icon">→</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
-            <div id="formSuccess" class="form-success" aria-live="polite"></div>
+            <div id="formSuccess" class="form-success" role="alert" aria-live="polite"></div>
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ── FOOTER ───────────────────────────────────────────────────────────────── -->
   <footer id="footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
           <div class="nav-logo footer-logo">
-            <span class="logo-mark">▲</span>
-            <span class="logo-text">APEXARA<em>DYNAMICS</em></span>
+            <span class="logo-glyph">▲</span>
+            <div class="logo-text-wrap">
+              <span class="logo-primary">APEXARA</span>
+              <span class="logo-secondary">DYNAMICS</span>
+            </div>
           </div>
           <p>Engineering the future of autonomous aerial intelligence for a world that demands more.</p>
+          <div class="footer-mono">ITAR Compliant · SK-Sourced · U.S. Assembled</div>
         </div>
-        <div class="footer-links-group">
+        <div class="footer-nav-group">
           <h5>Company</h5>
           <ul>
-            <li><a href="#overview">About Us</a></li>
+            <li><a href="#identity">Profile</a></li>
+            <li><a href="#fleet">Fleet</a></li>
             <li><a href="#capabilities">Capabilities</a></li>
             <li><a href="#technology">Technology</a></li>
-            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-links-group">
-          <h5>Industries</h5>
+        <div class="footer-nav-group">
+          <h5>Platforms</h5>
           <ul>
-            <li><a href="#capabilities">Defense & Security</a></li>
-            <li><a href="#capabilities">Critical Infrastructure</a></li>
-            <li><a href="#capabilities">Precision Agriculture</a></li>
-            <li><a href="#capabilities">Emergency Response</a></li>
+            <li><a href="#fleet">GD-D2</a></li>
+            <li><a href="#fleet">GD-X800</a></li>
+            <li><a href="#fleet">LOWUS (MUM-T)</a></li>
+            <li><a href="#fleet">Remo-M</a></li>
           </ul>
         </div>
-        <div class="footer-links-group">
+        <div class="footer-nav-group">
           <h5>Legal</h5>
           <ul>
             <li><a href="#">Privacy Policy</a></li>
@@ -470,12 +724,11 @@
       </div>
       <div class="footer-bottom">
         <p>© 2026 Apexara Dynamics, Inc. All rights reserved.</p>
-        <p>Engineered in San Francisco. Deployed worldwide.</p>
+        <p>Engineered in the U.S.A. Deployed worldwide.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Three.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="main.js"></script>
 </body>

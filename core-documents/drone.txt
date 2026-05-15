@@ -1,0 +1,1079 @@
+﻿About our Company
+What Our Company Does/ Who We Are:
+
+
+AGMM Antiquities Inc. (S‑Corp) rebuilds drones using surplus components and parts sourced through partner companies abroad. We receive disassembled South Korean‑made systems, assemble the airframes and avionics, and develop modular autonomy software that can be integrated into a range of combat and defense UAVs. Hardware refurbishment and software development are managed through vetted subcontractors and partner firms to meet customer and military requirements. 
+
+
+
+
+
+
+Executive Summary
+Executive Summary: 
+
+
+* Purpose of the warehouse assembly and refurbishment. 
+* High level list of drones to be sourced (for example, small multirotors, small fixed-wing loiterers, mid-tier tactical fixed-wing, long endurance multirotors). 
+* Key sourcing channels (South Korean OEM partners, surplus, domestic subcontractors).
+
+
+Objectives and Scope
+Objectives and Scope: 
+
+
+* Business objectives (cost efficient rebuilds, modular autonomy, volume targets).
+* Scope limits (which weaponization activities are excluded, export/ ITAR constraints). 
+* Output expectations (units/ volume per month, readiness standards).
+
+
+
+
+Drone Types and Role Definitions
+Drone Types and Role Definitions: 
+
+
+* For each drone class described will be; the specific drones typical weight class and payload capacity. 
+* For example: Multipurpose GD-D2’s (loitering munitions, expendable strikes and mapping). 
+* Multipurpose GD2-DS30W’s (loitering munitions, expendable strikes and mapping).  
+* Multipurpose GD-X800’s (loitering munitions, expendable strikes and mapping).
+* Multipurpose DG-1430 (ISR, strike support, loitering munitions, expendable strikes and mapping).  
+* Stealth Loyal-Wingman’s (Stealth UCAV and MUM-T)
+* Remo-M’s (long endurance, multirotor, persistent ISR, logistics).
+* Multipurpose Quadcopters (loitering munitions, expendable strikes and mapping). 
+* UCONSYSTEM (ISR, strike support). 
+
+
+General Break Downs
+What the US is in a deficit for right now (the demand for certain drones). What we can do, based on each deficit and drone type. 
+
+
+Loitering munitions / attritable swarms: 
+
+
+-Giant Drone (GD‑D2 dropping‑objects) and GD‑1430 (convertible ag drone). 
+-low‑cost airframes adaptable for expendable munitions (racing/performance airframes could be adapted for fast attackers). 
+
+
+High‑end survivable UCAV / stealthy loyal‑wingman: 
+
+
+-LOWUS program. 
+-specifically designed for KF‑21 manned‑unmanned teaming and stealthy loyal‑wingman roles. 
+
+
+Mid‑tier tactical ISR/strike (Group 3/4):
+
+
+-Group 3 greater than 20 pounds typically 55 pounds. Group 3 is more suited for short range strikes, operational capacities are fewer hours, can be used for surveillance and reconnaissance. Commercial/ tactical UAS. ISR roles (Intelligence, Surveillance and Reconnaissance). Low cost, easier to field but less survivability and endurance.
+
+
+-Examples of class 3 from SK companies: Giant Drone Co Ltd; GD-D2 (low cost ISR and loitering), GD-X800 (fast attack), GD-1430 (1430, commonly used for agriculture and commercial use, can be easily converted for loitering [surveillance and detonation]).  UCONSYSTEM Co Ltd: Quadcopter, Hojung Solutions; Remo-M (small fixed wing mapping ISR). 
+
+
+-Group 4 (theater tactical) AGL (above ground level) and BLOS (beyond line of sight). Can range by a few hundred pounds. Suited for long range strikes, higher altitudes than Group 3 and MALE (medium altitude long endurance) can reach altitudes up to hundreds of thousands of feet, ISR roles, Operational capacities last much longer.
+
+
+-Examples of Group 4 from SK companies: 
+
+
+-UCONSYSTEM Co Ltd; has many tactical fixed-wing battalion-class systems. (suits group 4 when given heavier payloads).
+-Doosan Mobility Innovation; DS30 and DS30W Hydrogen Multirotors. (group 4 when equipped with cell fuel and larger payloads. 
+-Korea Aerospace Industries (KAI); Tactical/weaponized airframes via Hanwha integration, provides drones to fly alongside the KF-21 jet, these are called loyal-wingman/UCAV (unmanned combat aerial vehicle) drones, also known as LOWUS (low observable unmanned wingman system). 
+-Hanwha; 1. Provides the hardware such as heavier duty airframe mods, power and propulsion upgrades, mission avionics and mission computer systems [this would be the software]. 2. sensors and targeting [EO/IR turrets (electro infrared) with multi sensor payloads. 3. can add SIGINT (signals intelligence and ELINT electronic intelligence, can integrate radars for SAR (synthetic aperture radar)]. 4. Weapon management and hardpoint systems. For testing, integration of hardpoint pylon systems (allows a larger payload to be attached, typically to the wing), safing chains (CUAVs). 5. Communications (C2 and BLOS) C2 (command and control drones. A secured link between the UAV and ground station. Includes encrypted data links, SATCOM (satellite communication)/BLOS modems, diversity switching. 6. Navigation resilience and guidance, tactical INS (internal navigation system) and IMU (internal measuring units). High performance sensors that use gyros and accelerometers to track altitude and position, RTK (real time kinematic) provides real time cm level accuracy/ GNSS (global navigation satellite system) tracks the orientation of the drone. The dual antennas where one antennae uses RTK and the other GNSS. 7. Survivability and EW (electronic warfare). Uses spectrum monitoring for airborne detection, geolocation and analysis using RF signals on UAVs. 8. Safety, certification and logistics. Tests for MIL-STD (military standard) EMI (electromagnetic interference) and EMC (electromagnetic compatibility). Provides maintenance, test fixtures, ground support equipment, spares and training packages. Obsolescence mitigation, configuration management, and lifecycle support. 9. Integration and program support. System engineering and flight program support, SOC (security operations center) and GCS which is a company that provides SOC IT services. 
+
+
+Common Drone Components
+Common ISR sensor typer: 
+
+
+EO/IR camera and video, SAR (synthetic aperture radar) and all-weather (GMTI) ground imaging and moving target indication. LiDAR (3D mapping and obstacle sensing), MASINT (measurement and signature intelligence) can be acoustic, nuclear, chemical, etc. 
+
+
+Materials, Vendors/ Companies (Rugged Grade): 
+
+
+-Flight Controller/ Autopilot: PX4-compatible flight controller (needs CAN (controller area network) /UART (universal asynchronous receiver-transmitter. Companies such as Cube Orange+, CubePilot, Cube Autopilot, Auterion-certified units (or just the hardware software can be added).  
+
+
+-Mission Computer (ROS2 [robot operating system] Host): open-source middle-ware. Connects sensors, flight controllers and intelligent algorithms to enable autonomous behavior. Acts as a standardized language for drone software. 
+
+
+-Power distribution, battery and fuel-cell subsystem: PDM (power distribution module) for fuel-cell controllers H2 platforms with battery management and current sensing.Companies such as Pixhawk for PDM, Doosan for fuel-cell integration. Eaton/ Mean Well for higher power. 
+-ESCs, motor controllers and motors: ESC’s (electronic speed controller) control the BLDC (brushless direct current) motor. Companies such as T-Motor, KDE, and Hobbywing. 
+
+
+-IMU, INS, GNNS: needs compatibility with anti-spoofing. Companies VectorNav (VN-300/400), OxTS, u-blox (F9 series for RTK), Septentrio (defense grade GNNS). 
+
+
+-EO/IR gimbal and sensors: Gimbal connects EO to IR interface, stabilizes cameras. Companies such as Hanwha (EO modules), FLIR/ Teledyne, WESCAM. 
+
+
+-Radar/ LiDAR: Compact FMCW Radar, small LiDAR for sense/ and avoiding ISR. Companies Navtech, Echodyne (radar), Velodyne/ RoboSense (LiDAR) 
+
+
+-Tactical datalinks, radios, SATCOMs: Companies L3Harris, Persistent Systems (drone class modems), Cobham/ Saccade (SATCOM). Modem for SATCOM. 
+
+
+-EW, Spectrum Sensors (non offensive receiver/ detection): RF spectrum sensor if needed with module jammer units. Companies Rohde & Schwarz (sensors), L3Harris (EW modules), Rhode class offers detection. (jammer units require legal/ operational clearance). 
+
+
+-Health, black-box, TPM: Encrypted flight data recorder, TPM (Trusted Platform Modulator) /HSM for keys, telemetry logger SSD (solid-state drive). Companies SEAKR (recorders), Infineon (TPM), 
+
+
+-Mechanical, mounting, connectors, vibration isolation: Elastomeric mounts, EMI shielding, Keyed aviation connectors, harness assemblies. Companies Lord Corp (vibration isolators), Amphenol (aviation connectors), TE Connectivity. Reduces vibration and maintains EMI/ EMC integrity. 
+
+
+GD-D2 Components/Price Breakdown
+Rugged Grade Breakdown GD-D2 Components/Price Breakdown: 
+
+
+Prototype 1-5, Small batch 10-50, Production 100+. MIL-grade alternatives noted.
+
+
+Airframe: 
+
+
+Product: GD-D2 small fixed-wing airframe. 
+Company: Giant Drone Co Ltd
+Description: Lightweight attritable fixed-wing structural airframe with belly payload bay and servo bays. 
+Power: N/A
+Weight: 1500-5000 grams or 3.3 pounds to 11 pounds. 
+PPU: Prototype $500-$1500, Small Batch $400-$1000, Production $300-800. 
+
+
+Flight Controller:
+
+
+Product: PX4- compatible flight controller (autopilot). 
+Company: CubePilot, (Cube Orange+), Holyboro and Auterion.
+Description: Pixhawk/PX4 host with a redundant IMU option MAVLink/ CAN Interfaces.
+Power: 10-50 W
+Weight: 50-200 grams or .11 pounds to .44 pounds.
+PPU: Prototype: $500-$900, Small Batch $450-$800, Production $350-$600.
+(MIL Auterion-certified or Curtiss-Wright flight controllers, higher costs).
+
+
+Mission Computer: 
+
+
+Product: Small SBC (ROS2 capable).
+Company: NVIDIA Jetson Xavier NX, Jetson Orin NX, Intel Rugged NUC, Advantech, Curtiss-Wright (MIL). 
+Description: Autonomy and sensor fusion host a modest CPU GD-D2, a heavy GPU is not required. 
+Weight: 5-50 grams or .011 pounds to .11 pounds. 
+PPU: Prototype $800-$1500, Small Batch $700-$1200, Production $600-$1000
+(MIL Curtiss-Wright and Kontron rugged SBCs, higher costs).
+
+
+Power Distribution Module (PDM): 
+
+
+Product: Small PDM with current sensing and switched outputs. 
+Company: Custom Avionics PDMs, or Hobby/Commercial Vendors. 
+Description: Central power management with isolated rails for FC/ comm/ payload, fusing and telemetry. 
+Power: Dependent on system. 
+Weight: 50-300 grams or .11 pounds to .66 pounds. 
+PPU: Prototype $100-$300, Small Batch $120-$400, Production $150-$600.
+MIL PDM’s Honeywell/ Eaton Avionics.
+
+
+Battery: 
+
+
+Product: LiPo battery pack sized to mission. 
+Company: Various companies, MIL grade EnerSys and Amphenol. 
+Description: High C rate battery size used for typical GD-D2 missions (1-3 Ah).
+Power: Varies by pack.
+Weight: 200-800 grams or .44 pounds to 1.76 pounds. 
+PPU: Prototype $50-$200, Small Batch $60-$300, Production $40-$150.
+MIL Mil-spec battery assembly alternatives (higher cost).
+
+
+ESCs and Motor: 
+
+
+Product: BLDC ESC with a compatible motor.  
+Company: T-Motor, KDE, Hobbywing (rugged) Curtis Instruments (MIL). 
+Description: Motor controller and brushless motor matched to thrust requirements supported by DShot/ PWM.
+Power: Dependable on motor.
+Weight: 200-800 grams combined.
+PPU: Prototype $100-$400, Small Batch $120-$600, Production $100-$500.
+MIL Curtis Instruments or Magneti Marelli. 
+
+
+IMU/ INS: 
+
+
+Product: IMU or tactical INS. 
+Company: VectorNav (VN-100), u-blox (for GNSS combos), Honeywell for MIL.
+Description: High-rate attitude sensing the INS is an optional strapdown to improve GNSS denial resilience. 
+Power: extremely low W.
+Weight 10-80 grams. 
+PPU: Prototype $100-$800, Small Batch $200-$1500, Production $150-$1200. 
+MIL Honeywell IMU (higher cost).
+
+
+GNSS: 
+
+
+Product: Single or Dual GNSS receiver that's RTK capable with an anti-spoof filter. 
+Company: u-blox F9 series and Septentrio. For MIL NovAtel and Septentrio. 
+Description: Precise positioning with an optional RTK for centimeter accuracy that has anti-spoofing capabilities. 
+Power: Very few W
+Weight: 10-50 grams or .022 pounds to .11 pounds. 
+PPU: Prototype $100-$400, Small Batch $150-$600, Production $100-$500.
+MIL NovAtel OEM7 and Septentrio AsteRx-F. 
+
+
+EO/IR Payload: 
+
+
+Product: lightweight camera or micro-gimbal payload. 
+Company: FLIR (Teledyne), Vue/ Tau, small Hanwha modules, Wescam micro variants. 
+Description: Day and night imaging with a micro-gimbal for stabilized imagery. 
+Power: 5-20 W
+Weight: 50-500 grams or .11 pounds to 1.1 pounds.
+PPU: Prototype $500-$5000, Small Batch $1000-$10000, Production $800-$8000.
+MIL FLIR micro-gimbals. 
+
+
+Telemetry/ Datalink: 
+
+
+Product: Encrypted LOS tactical radio for telemetry and video.
+Company: Persistent Systems for commercial encrypted links, L3Harris for MIL
+Description: Primary vehicle GCS link with low latency video and telemetry with short BLOS options. 
+Power: 5-30 W
+Weight: 50-300 grams or .11 pounds to .66 pounds.
+PPU: Prototype $1000-$5000, Small Batch $2000-$15000, Production $1500-$10000. 
+MIL L3Harris or Persistent Systems. 
+
+
+Payout/ Release: 
+
+
+Product: servo-actuated release mechanism. 
+Company: Custom suppliers or industrial release vendors. 
+Description: Lightweight payload drop or dispenser mechanism, servo controlled. 
+Power: 1-10 W
+Weight: 50-200 grams or .11 pounds to .44 pounds. 
+PPU: Prototype $50-$200, Small Batch $80-$500, Production $50-$300. 
+MIL certified military release units. 
+
+
+Health Logger/ Black Box: 
+
+
+Product: SSD encrypted flight data recorder with TPM. 
+Company: Industrial SSD vendors example Infineon TPM for MIL SEAKR and Curtiss-Wright
+Description: Secure logging of telemetry, sensor feeds and forensic data. 
+Power: Very few W
+Weight:100-400 grams or .22 pounds to .88 pounds.
+PPU: Prototype $200-$800, Small Batch $300-$1500, Production $200-$1000.
+MIL grade flight data recorders SEAKR and Curtiss-Wright.
+
+
+Mechanical and Mounting: 
+
+
+Product: Vibration mounts, keyed connectors, EMI shielding, harnesses. 
+Company: Lord Corp (mounts), Amphenol, TE Connectivity (connectors). 
+Description: Mechanical mounts and EMI protection to reduce vibration and interference. 
+Power: 0
+Weight: 100-1000 grams or .22 pounds to 2.2 pounds (varies by kit).
+PPU: Prototype $100-$400, Small Batch $150-$800, Production $100-$600.
+MIL Lord mounts, Amphenol Mil-spec connectors. 
+
+
+Weight varies based on the battery that is used along with add ons and payload. The batteries on standard flight operation last 30-90 min. A battery at around 100-600 Wh works depending on propulsion efficiency and payload. The add ons to the GD-D2 will take around 60 W. The entire GD-D2 will take 100 W on the low end and 800 W on the high end. 
+
+
+GD2-DS30W Components/Price Breakdown
+Rugged Grade Breakdown GD2-DS30W Components/Price Breakdown:
+
+
+Prototype 1-5, Small batch 10-50, Production 100+. MIL-grade alternatives noted.
+
+
+Airframe:
+
+
+Product: GD-1430 multipurpose airframe.
+Company: Giant Drone (GD-1430).
+Description: Small-to-medium agricultural / multipurpose airframe (likely quad/hex multirotor or
+small fixed-wing variant) with payload bay for spray, seed/drop, or modular sensors.
+Power: N/A (structural)
+Weight: 3,000-9,000 grams or 6.6 pounds to 19.8 pounds (empty, depends on configuration).
+PPU: Prototype $800-$3000, Small batch $600-$2000, Production $400-$1200.
+MIL alternative: OEM production airframe via contracted prime; reinforced composite variants.
+
+
+Flight Controller:
+
+
+Product: PX4-compatible flight controller (autopilot).
+Company: CubePilot; Holybro; Auterion (certified).
+Description: Autopilot supporting multirotor/fixed-wing modes, payload controls, MAVLink/CAN.
+Power: 10-50 W
+Weight: 50-250 grams or .11 pounds to .55 pounds.
+PPU: Prototype $500-$900, Small batch: $450-$800, Production $350-$600.
+MIL alternative: Auterion-certified; Curtiss-Wright flight controllers.
+
+
+Mission Computer:
+
+
+Product: Rugged SBC (ROS2 capable).
+Company: NVIDIA Jetson Xavier NX / Orin NX; Intel Rugged NUC; Advantech.
+Description: Autonomy, mapping, sensor fusion, route planning for agriculture missions.
+Power: 10-100 W (depends on GPU use).
+Weight: 200-800 grams or .44 pound to 1.76 pounds.
+PPU: Prototype $800-$2000, Small batch $700-$1500, Production $600-$1200.
+MIL alternative: Curtiss-Wright; Kontron rugged SBCs.
+
+
+Power Distribution Module (PDM):
+
+
+Product: PDM with current sensing and switched outputs.
+Company: Custom/hobby PDM vendors; avionics suppliers.
+Description: Central power routing for motors, pumps (spray), avionics and payloads; fusing and telemetry. 
+Power: system dependent (high current for pumps/propulsion).
+Weight: 100-800 grams or .22 pounds to 1.76 pounds.
+PPU: Prototype $150-$500 Small batch $180-$700 Production $150-$600.
+MIL alternative: Custom MIL-grade PDM (Honeywell/Eaton).
+
+
+Battery/ Power System:
+
+
+Product: High-energy LiPo / Li-ion battery pack or hybrid power (optional).
+Company: Industrial battery suppliers.
+Description: High C-rate packs sized for flight time and payload (agricultural missions often
+heavy payload and pumps).
+Power: Varies widely (200-2000 W peak).
+Weight: 1,000-6,000 grams or 2.2 pounds to 13.2 pounds (depending on capacity).
+PPU: Prototype $150-$800, Small batch $120-$700, Production $80-$500.
+MIL alternative: Mil-spec battery assemblies (EnerSys/Amphenol).
+
+
+Motors and ESCs:
+
+
+Product: BLDC motors and ESCs sized to airframe thrust and payload (may include pump motor).
+Company: T-Motor; KDE; Hobbywing; Curtis Instruments (rugged).
+Description: Propulsion motors and controllers:possibly separate pump motors for sprayers.
+Power: 200-2000 W per motor (depends on frame).
+Weight: 500-4000 grams or 1.1 pounds to 8.8 pounds (total for propulsion system).
+PPU: Prototype $200-$1200, Small batch $300-$2000, Production: $200-$1500.
+MIL alternative: Rugged motor controllers (Curtis Instruments / Magneti Marelli).
+
+
+IMU/ INS:
+
+
+Product: Tactical IMU or compact INS.
+Company: VectorNav; u-blox; Honeywell (MIL).
+Description: Attitude sensing and stabilization for precise mapping and spray control.
+Power: Very few W
+Weight: 10-150 grams or .022 pounds to .33 pounds. 
+PPU: Prototype $150-$800, Small batch $200-$1200, Production $150-$1000.
+MIL alternative: Honeywell HG-series IMU.
+
+
+GNSS/ RTK:
+
+
+Product: GNSS receiver with RTK support and anti-spoof filter.
+Company: u-blox F9; Septentrio; NovAtel for MIL.
+Description: High-precision positioning for mapping, precision spraypaths, and autonomous
+operations.
+Power: Very few W
+Weight: 20-120 grams or .044 pounds to .26 pounds.
+PPU: Prototype $200-$700, Small batch $200-$900, Production $150-$700.
+MIL alternative: Septentrio AsteRx-F; NovAtel OEM7.
+
+
+EO/ RGB / Multispectral Sensors:
+
+
+Product: Mapping camera or multispectral sensor (NDVI).
+Company: MicaSense; DJI OEM cameras; FLIR small cameras.
+Description: Crop health mapping, multispectral bands for NDVI, RGB orthophoto capture.
+Power: 5-30 W
+Weight: 100-800 grams or .22 pounds to 1.76 pounds.
+PPU: Prototype $800-$5000, Small batch $700-$6000, Production $500-$4000.
+MIL alternative: Rugged sensor housings and MIL connectors.
+
+
+Payload Spray/ Seed/ Drop Mechanism:
+
+
+Product: Agricultural sprayer kit or modular payload mount.
+Company: OEM accessories or custom integrators.
+Description: Pump, tank, nozzles, flow control, or seed-drop mechanism; modular quick-change
+mounts.
+Power: pump motor draws 50-500 W (depending on flow).
+Weight: 500-4000 grams or 1.1 pounds to 8.8 pounds (depends on tank and payload).
+PPU: Prototype $200-$1500, Small batch $300-$3000, Production $200-$2000.
+MIL alternative: Certified dispensing/release mechanisms if used for logistics.
+
+
+Telemetry/ Datalink:
+
+
+Product: Encrypted LOS radio and optional cellular/BLOS link.
+Company: Persistent Systems; L3Harris; commercial cellular modems.
+Description: Telemetry, control, and payload telemetry; optionally use LTE/5G for infrastructure
+inspection modes.
+Power: 5-30 W
+Weight: 100-500 grams or .22 pounds to 1.1 pounds.
+PPU: Prototype $800-$3000, Small batch $1200-$8000, Production $800-$5000.
+MIL alternative: L3Harris or Persistent Systems MIL variants.
+
+
+Health Logger/ Black-box:
+
+
+Product: Encrypted SSD flight data recorder with TPM.
+Company: Industrial SSD vendors; Infineon TPM; SEAKR/Curtiss-Wright for MIL.
+Description: Secure data logging for mapping validation and post-flight analysis.
+Power: Very few W
+Weight: 100-500 grams or .22 pounds to 1.1 pounds.
+PPU: Prototype $200-$1000, Small batch $300-$1500, Production $200-$1000.
+MIL alternative: Mil-grade flight data recorders.
+
+
+Mechanical/ Mounting/ Spray plumbing:
+
+
+Product: Vibration mounts, keyed connectors, tubing, quick-release mounts.
+Company: Lord Corp; Amphenol; TE Connectivity; industrial hose suppliers.
+Description: Vibration isolation, EMI protection, secure plumbing for fluid payloads.
+Power: N/A
+Weight: 200-1500 grams or .44 pounds to 3.3 pounds (kit).
+PPU: Prototype $150-$600, Small batch $200-$1200, Production $150-$800.
+MIL alternative: Mil-spec mounts and connectors.
+
+
+GD-X800 Components/Price Breakdown
+Rugged Grade Breakdown GD-X800 Components/Price Breakdown:
+
+
+Prototype 1-5, Small batch 10-50, Production 100+. MIL-grade alternatives noted.
+
+
+Airframe:
+
+
+Product: GD-X800 high-speed airframe.
+Company: Giant Drone (GD-X800).
+Description: Lightweight, aerodynamic performance airframe optimized for high speed and
+maneuverability; reinforced motor mounts and reduced drag features.
+Power: N/A (structural)
+Weight: 800-1,500 grams or (empty, configuration dependent).
+PPU: Prototype $600-$1800, Small batch $500-$1200, Production $350-$900.
+MIL alternative: Reinforced composite production airframe via contracted prime.
+
+
+Flight Controller:
+
+
+Product: High-performance PX4-compatible flight controller (low latency).
+Company: CubePilot; Holybro; Auterion.
+Description: Fast control loop, redundant IMU optional, supports DShot and high-rate telemetry
+for aggressive maneuvers.
+Power: 10-30 W
+Weight: 30-120 grams or
+PPU: Prototype $450-$900, Small batch $400-$800, Production $300-$600.
+MIL alternative: Auterion-certified or Curtiss-Wright flight controllers.
+
+
+Mission Computer / Companion Controller:
+
+
+Product: Small companion SBC for telemetry/vision (optional).
+Company: NVIDIA Jetson Xavier NX (lite); Raspberry Pi / Intel NUC (compact).
+Description: Optional lightweight computer for vision; target tracking, or autonomy; may be
+omitted in pure racing configs.
+Power: 5-50 W (depends on model).
+Weight: 50-300 grams or
+PPU: Prototype: $300-$1200, Small batch: $250-$900, Production $200-$800.
+MIL alternative: Curtiss-Wright / Kontron rugged SBCs (if required).
+
+
+Power System (Battery / PDU):
+
+
+Product: High-discharge LiPo battery pack; small PDM/ESC harness.
+Company: Industrial LiPo suppliers; hobby vendors.
+Description: Very high C-rate battery for short bursts and top speed; compact power distribution
+harness.
+Power: 500-3000 VI peak depending on motor choice.
+Weight: 300-900 grams or (battery only).
+PPU: Prototype $80-$400, Small batch $70-$350, Production $50-$250.
+MIL alternative: Mil-spec battery assemblies and custom PDMs for rugged ops.
+
+
+Motors & ESCs:
+
+
+Product: High-KV BLDC motors and high-current ESCs (fast response).
+Company: T-Motor (high-KV series); KDE; Hobbywing; Curtis Instruments (rugged).
+Description: High-power, high-RPM brushless motors and ESCs supporting DShot or UAVCAN
+for precise throttle control.
+Power: 500-3000 W.per motor peak (platform dependent).
+Weight: 100-700 grams or total per motor/ESC assembly.
+PPU: Prototype $150-$700, Small batch $160-$900, Production $120-$700.
+MIL alternative: Rugged motor controllers (Curtis Instruments, Magneti Marell).
+
+
+IMU/ INS:
+
+
+Product: High-rate MEMS IMU or tactical IMU.
+Company: VectorNav; TDK/invenSense variants; Honeywell (MIL).
+Description: Very low latency attitude sensing for aggressive flight control.
+Power: Very few W
+Weight: 10-60 grams or
+PPU: Prototype: $150-$700, Small batch: $200-$1200, Production: $150-$900.
+MIL alternative: Honeywell HG-series IMU.
+
+
+GNSS/ Positioning:
+
+
+Product: GNSS receiver (single or small RTK module) and compass.
+Company: u-blox F9 (compact); Septentrio for high accuracy.
+Description: Position hold and speed/track reference; RTK optional but less critical for pure
+racing.
+Power: Very few W
+Weight: 10-40 grams or 
+PPU: Prototype $100-$400, Small batch $120-$500, Production $80-$300
+MIL alternative: Septentrio AsteRx-F; NovAtel OEM7
+
+
+Payload (Optional):
+Product: Small EO/IR or lightweight seeker / high-speed sensor.
+Company: RunCam / lightweight OEM camera; FLIR micro modules for IR.
+Description: Optional forward camera for targeting, vision; or FPV video downlink.
+Power: 2-15 W
+Weight: 10-150 grams or
+PPU: Prototype $50-$800, Small batch $80-$1200, Production $50-$600.
+MIL alternative: Rugged micro EO modules.
+
+
+Telemetry/ Datalink/ Video:
+
+
+Product: Low-latency FPV video transmitter and encrypted telemetry radio.
+Company: TBS, ImmersionRC (FPV); Persistent Systems or L3Harris for encrypted links.
+Description: Low latency video downlink for piloting and telemetry link for command.
+Power: 5-30 W
+Weight: 20-200 grams or
+PPU: Prototype: $80-$700, Small batch: $100-$1200, Production: $80-$600.
+MIL alternative: L3Harris or Persistent Systems MIL variants.
+
+
+
+
+Health Logger/ Flight Data Recorder:
+
+
+Product: Compact encrypted SSD or micro-recorder.
+Company: Industrial SSD vendors; Infineon TPM; Curtiss-Wright for MIL.
+Description: Lightweight logging of flight telemetry and video for validation and forensics.
+Power: Very few W
+Weight: 20-150 grams or
+PPU: Prototype: $100-$600, Small batch: $150-$1000, Production: $100-$700.
+MIL alternative: Mil-grade flight data recorders.
+
+
+Mechanical/ Mounting/ Cooling:
+
+
+Product: Vibration mounts, lightweight brackets, cooling ducts
+Company: Lord Corp; bespoke carbon-fiber brackets; TE Connectivity connectors
+Description: Mechanical fixtures to secure electronics and manage airflow during high-speed
+runs
+Power: N/A
+Weight: 20-200 g
+PPU: Prototype $50-$300, Small batch $80-$500, Production $50-$350
+MIL alternative: Mil-spec mounts and connectors
+
+
+
+
+stealth loyal-wingman Components/Price Breakdown
+LOWUS Program or Nearest Practical Alternatives Components/Price Breakdown:
+
+
+stealth loyal-wingman/ low-observable UCAV class
+
+
+Prototype 1-3 Small batch 5-20 Production 50+ 
+
+
+Airframe (stealth loyal-wingman/ LO UCAV class)
+ 
+Product: Low-observable loyal-wingman airframe.
+Company: LOWUS program partners / Korea Aerospace Industries (KAI)/ industry primes.
+Description: Composite stealth airframe, internal weapon bays, low radar/ IR signature
+treatments, provisions for manned-unmanned teaming interfaces.
+Power: N/A (structural)
+Weight: several hundred kg to multiple tonnes (varies by design and payload).
+PPU: Prototype (1-3) $15M-$8OM, Small batch (5-20) $8M-$40M, Production (50+) $4M-$20M.
+MIL alternative/ notes: Development and production are inherently MIL programs (KAI / national
+primes lead production).
+
+
+Propulsion:
+
+
+Product: Small turbofan / high-power turboprop or advanced piston engine (platform dependent).
+Company: Domestic engine partners or licensed engines; international aero-engine suppliers.
+Description: Engine sized for cruise speed/endurance and LO integration (low IR signature, inlet
+cooling).
+Power: turbine power class (kN thrust or equivalent).
+Weight: platform dependent (significant).
+PPU: Prototype $1M-$8M, Small batch $800k-$4M, Production $500k-$2M.
+MIL alternative: Certified aero engines from established suppliers; integration costs high.
+
+
+Mission Computer & Avionics:
+
+
+Product: High-assurance rugged mission computer and redundant avionics suite.
+Company: Curtiss-Wright; BAE/prime subs; Hanwha Systems (integration).
+Description: Real-time mission computer for MUM-T, sensor fusion, weapon management;
+hardware root of trust and HSM/TPM.
+Power: 100-1000 W depending on sensors and compute (GPU/AI).
+Weight: 5-50+ kg (including cooling).
+PPU: Prototype $200k-$1.5M, Small batch $150k-$800k, Production $100k-$500k.
+MIL alternative: Curtiss-Wright / Elma / Kontron MIL-grade systems.
+
+
+Sensors & Payloads:
+
+
+Product: Multi-sensor suite - AESA radar (compact), EO/IR turret, SIGINT/ELINT packages,
+LIDAR (optional).
+Company: Hanwha (EO/IR), LIG Nex1 (radar/EW), Elbit/Thales (AESA/ISR), domestic primes.
+Description: Internal/low-observable sensor integration for ISR, targeting, and radar warning;
+sensor fusion into mission computer.
+Power: 100-2000 W per major sensor (AESA radar and EW notable).
+Weight: tens to hundreds of kg total.
+PPU: Prototype $1M-$10M (sensor suite), Small batch $800k-$5M, Production $500k-$2M.
+MIL alternative: Defense-grade AESA and EW solutions from national suppliers.
+
+
+Weapons Management & Internal Bays:
+
+
+Product: Weapon management unit, internal carriage and release mechanisms, certified safing
+chains.
+Company: Hanwha / KAI integration teams; specialist subsystem suppliers.
+Description: Hardened, redundant weapon-management electronics and mechanical bays with
+isolation and safeties.
+Power: moderate; isolated power rails.
+Weight: design dependent.
+PPU: Prototype $200k-$2M, Small batch $150k-$1M, Production $100k-$500k.
+MIL alternative: Weapon-management suites certified to national standards.
+
+
+Secure Communications & BLOS C2:
+
+
+Product: Encrypted MUM-T datalink, tactical LOS/BLOS radios, SATCOM integration,
+anti-jamming waveforms.
+Company: Hanwha Systems, LIG Nex1, Cobham, L3Harris (partners).
+Description: High-assurance low-latency links for manned-unmanned teaming, degraded,
+modes, and encrypted SATCOM fallback.
+Power: 50-500 W depending on SATCOM and antenna systems.
+Weight: 5-50+ kg (antenna/ terminals).
+PPU: Prototype $200k-$2M, Small batch $150k-$1M, Production $100k-$500k.
+MIL alternative: National MIL-grade radios and waveforms.
+
+
+Survivability & EW:
+
+
+Product: EW detection suite, defensive countermeasures, RF hardening, IR suppression
+measures.
+Company: LIG Nex1, Hanwha Systems, ADD/R&D partners.
+Description: Passive/active EW for threat detection and limited countermeasures (non-offensive)
+and EMI/RFI hardening.
+Power: variable; EW transmitters (if present) increase power demands significantly.
+Weight: tens to hundreds of kg.
+PPU: Prototype $500k-$5M, Small batch $400k-$2M, Production $200k-$1M.
+MIL alternative: Integrated EW suites from national defense primes.
+Health Monitoring, Logging & Certification Packages: 
+
+
+Product: Encrypted FDR, prognostics, maintenance/logistics support kit.
+Company: Curtiss-Wright, SEAKR, Hanwha Systems.
+Description: Full flight recording, maintenance telemetry, lifecycle support and test equipment.
+Power: few-tens of W
+Weight: 5-20 kg
+PPU: Prototype $50k-$300k, Small batch $40k-$200k, Production $20k-$100k.
+MIL alternative: Mil-grade flight data recorders and depot systems.
+
+
+Mechanical, Thermal & Integration Kits:
+
+
+Product: Mounts, thermal management, stealth coatings, ground support and GSE
+Company: KAI; Hanwha; contracted subsystem suppliers
+Description: Structural reinforcements, stealth coatings, cooling ducts, special test rigs and
+maintenance equipment
+PPU/ suite: Prototype $200k-$2M, Small batch $150k-$1M, Production $100k-$500k
+
+
+LOWUS is a program-level effort; delivering a fielded LO loyal-wingman requires prime integrator coordination (KAI, Hanwha) with national R&D and long flight-test campaigns.
+Estimates above are order-of-magnitude; actual designs vary widely by mission profile.
+
+
+Remo-M Components/Price Breakdown
+Remo-M Components/Price Breakdown:
+
+
+Prototype 1-5, Small batch 10-50, Production 100+. MIL-grade alternatives noted.
+
+
+Airframe:
+
+
+Product: Remo-M fixed-wing airframe.
+Company: Hojung Solutions.
+Description: Lightweight fixed-wing mapping and delivery platform optimized for endurance an
+modular payload bays (sensor or small cargo).
+Power: N/A (structural)
+Weight: 1,800-6,000 grams (empty, configuration dependent).
+Price per unit: Prototype $800-$2500, Small batch $600-$1800, Production $400-$1200.
+MIL alternative: OEM production airframe via contracted prime; reinforced composite variants.
+
+
+Flight Controller:
+
+
+Product: PX4-compatible flight controller (autopilot)
+Company: CubePilot; Holybro; Auterion (certified)
+Description: Fixed-wing autopilot with waypoint navigation, failsafes, MAVLink/CAN interfaces
+Power: 10-40 W
+Weight: 50-200 grams
+PPU: Prototype $500-$900, Small batch $450-$800, Production $350-$600
+MIL alternative: Auterion-certified / Curtiss-Wright flight controllers
+
+
+Mission Computer:
+
+
+Product: Rugged SBC (ROS2 capable) or lightweight companion computer.
+Company: NVIDIA Jetson Xavier NX / Orin NX; Intel Rugged NUC; Advantech.
+Description: Sensor fusion, mapping, autonomy and mission planning host (may be modest CPL
+for mapping workflows).
+Power: 5-70 W (depends on GPU use).
+Weight: 150-800 grams
+PPU: Prototype $800-$2000, Small batch $700-$1500, Production $600-$1200.
+MIL alternative: Curtiss-Wright; Kontron rugged SBCs.
+
+
+Power Distribution Module (PDM):
+
+
+Product: PDM with current sensing and switched outputs
+Company: Custom/hobby PDM vendors; avionics suppliers
+Description: Central power routing for propulsion, avionics and payloads; fusing and telemet
+Power: system dependent
+Weight: 50-400 grams
+PPU: Prototype $100-$350, Small batch $120-$450, Production $150-$600
+MIL alternative: Custom MIL-grade PDM (Honeywell/Eaton)
+
+
+Battery/ Power System:
+
+
+Product: LiPo or Li-ion battery pack sized to mission (or hybrid option).
+Company: Industrial battery suppliers.
+Description: Energy source sized for endurance and payload; pack capacity varies by mission
+profile.
+Power: 50-1200 W peak (platform dependent).
+Weight: 400-3000 grams
+PPU: Prototype $80-$500, Small batch $70-$450, Production $50-$300.
+MIL alternative: Mil-spec battery assemblies (EnerSys/Amphenol).
+
+
+Propulsion: Motor & ESC (for electric variants):
+
+
+Product: BLDC motor(s) and ESC(s) matched to airframe thrust.
+Company: T-Motor; KDE; Habbywing; Curtis Instruments (rugged).
+Description: Propulsion system sized for cruise thrust and climb with margin for payload.
+Power: 200-1500 W (depends on motor selection).
+Weight: 300-1500 grams (combined)
+PPU: Prototype $150-$600, Small batch $180-$900, Production $150-$700.
+MIL alternative: Rugged motor controllers (Curtis Instruments).
+IMU/ INS:
+
+
+Product: Compact IMU or tactical INS.
+Company: VectorNav; u-blox; Honeywell (MIL).
+Description: Attitude and navigation sensing for stable mapping and waypoint accuracy; op
+strapdown INS.
+Power: Very few W
+Weight: 10-120 grams
+PPU: Prototype $150-$800, Small batch $200-$1500, Production $150-$1200.
+MIL alternative: Honeywell HG-series IMU.
+
+
+GNSS/ RTK:
+
+
+Product: GNSS receiver with RTK support and anti-spoof option.
+Company: u-blox F9; Septentrio; NovAtel (MIL).
+Description: High-precision positioning for accurate mapping, automated flight corridors, ar
+delivery drop accuracy.
+Power: Very few W
+Weight: 20-120 grams
+PPU: Prototype $200-$700, Small batch $200-$900, Production $150-$700.
+MIL alternative: Septentrio AsteRx-F; NovAtel OEM7.
+
+
+Sensors: Mapping / ISR Payloads:
+
+
+Product: RGB mapping camera, multispectral unit, or EO/IR micro-gimbal.
+Company: MicaSense; FLIR; Hanwha; DJI OEM.
+Description: High-resolution mapping sensors or multispectral payloads for
+agriculture/inspection and EO/IR for ISR tasks.
+Power: 5-50 W
+Weight: 100-1200 grams (varies by sensor).
+PPU: Prototype $800-$6000, Small batch $700-$7000, Production $500-$5000.
+MIL alternative: Rugged sensor variants and MIL housings.
+
+
+Payload / Delivery Mechanism:
+
+
+Product: Modular cargo bay or servo-release/drop mechanism.
+Company: OEM accessory vendors or custom integrators.
+Description: Modular mounts for small cargo, delivery pods, or quick-change sensor pallets.
+Power: 1-20 W (depending on actuators).
+Weight: 100-2000 grams
+PPU: Prototype $100-$1000, Small batch $150-$2500, Production $100-$1500
+MIL alternative: Certified release units and logistics pallets.
+
+
+Telemetry/ Datalink:
+
+
+Product: Encrypted LOS datalink and optional LTE/5G or SATCOM fallback.
+Company: Persistent Systems; L3Harris; commercial cellular vendors.
+Description: Telemetry, command, and payload data transfer; optional high-bandwidth links for
+imagery offload.
+Power: 5-50 W
+Weight: 100-600 grams
+PPU: Prototype $800-$4000, Small batch $1200-$10000, Production $800-$6000.
+MIL alternative: L3Harris / Persistent Systems MIL variants.
+
+
+
+
+Health Logger/ Black-box:
+
+
+Product: Encrypted SSD recorder with TPM.
+Company: Industrial SSD vendors; Infineon TPM; SEAKR/Curtiss-Wright for MIL.
+Description: Secure logging of flight telemetry, sensor imagery, and forensics data.
+Power: Very few W
+Weight: 100-400 grams
+PPU: Prototype $200-$900, Small batch $300-$1500, Production $200-$1000.
+MIL alternative: Mil-grade flight data recorders.
+
+
+Mechanical/ Mounting / Aerodynamic Add-ons:
+
+
+Product: Vibration mounts, EMI shielding, sensor fairings, optional payload heat management.
+Company: Lord Corp; Amphenol; TE Connectivity; custom composites vendors.
+Description: Mechanical fixtures and aerodynamic fairings to stabilize sensors and protect
+electronics.
+Power: N/A
+Weight: 100-800 grams 
+PPU: Prototype $100-$600, Small batch $150-$1200, Production $100-$800.
+MIL alternative: Mil-spec mounts and connectors.
+
+
+Remo-M variants (pure fixed-wing vs hybrid VTOL) change propulsion, battery and weight -
+confirm intended mission (mapping vs delivery vs ISR) before final procurement.
+
+
+For rapid development: use commercial-rugged parts for flight testing; migrate to MIL-grade
+equivalents during qualification and fielding.
+
+
+
+
+Quadcopter Components/Price Breakdown
+Quadcopter (small multirotor) Components/Price Breakdown:
+
+
+Prototype 1-5, Small batch 10-50, Production 100+. MIL-grade alternatives noted.
+
+
+Airframe/ Airframe Kit:
+
+
+Product: Small tactical quadcopter airframe (frame + arms + landing gear).
+Company: Generic OEMs / Giant Drone / custom builders.
+Description: Lightweight modular multirotor frame optimized for payload bay or nose/gimbal
+integration; quick-swap arms for field repair.
+Power: N/A (structural)
+Weight: 800-3,000 grams (empty, depends on materials and motor size).
+PPU: Prototype $200-$800, Small batch $150-$600, Production $120-$400.
+MIL alternative: Reinforced composite frames via contracted primes; hardened landing gear.
+
+
+Flight Controller:
+
+
+Product: PX4-compatible multirotor flight controller.
+Company: CubePilot (Cube series); Holybro; Auterion (certified).
+Description: Low-latency stabilization, attitude control, failsafes, MAVLink/CAN interfaces;
+supports multirotor mixes and GPS hold.
+Power: 10-30 W
+Weight: 30-150 grams
+PPU: Prototype $300-$700, Small batch $250-$600, Production $200-$450.
+MIL alternative: Auterion-certified / Curtiss-Wright flight controllers.
+
+
+Power System: Battery & PDM:
+
+
+Product: High-C LiPo/Li-ion battery pack and small PDMs.
+Company: Various industrial/hobby battery suppliers; custom PDM vendors.
+Description: Battery sized for desired endurance; PDM provides switched rails, telemetry and
+protections.
+Power: 200-3000 W peak (platform dependent).
+Weight: 200-2,500 grams (battery only).
+PPU: Prototype $50-$300, Small batch $60-$500, Production $40-$350.
+MIL alternative: Mil-spec battery assemblies and MIL PDMs.
+
+
+Mission Computer/ Companion Computer:
+
+
+Product: Small SBC for autonomy, vision, or sensor processing.
+Company: NVIDIA Jetson Nano/Xavier NX; Raspberry Pi (dev); Intel NUC (compact); Advantech.
+Description: Handles perception, ML inference, sensor fusion, mission logic and high-rate data
+processing.
+Power: 5-100 W (depends on model/ GPU).
+Weight: 50-400 grams
+PPU: Prototype $150-$800, Small batch  $200-$1200, Production $150-$700.
+MIL alternative: Rugged SBCs from Curtiss-Wright or Kontron.
+
+
+Motors and ESCs:
+Product: BLDC motors and ESCs matched to airframe thrust.
+Company: T-Motor; KDE; Sunnysky; Hobbywing; Curtis Instruments (rugged).
+Description: Propulsion units sized for payload and endurance; ESCs preferably UAVCAN/CAN
+for telemetry.
+Power: 200-2000 W per motor peak.
+Weight: 100-1200 grams total (per motor/ESC assembly).
+PPU: Prototype $80-$400, Small batch $120-$900, Production $80-$600.
+MIL alternative: Rugged motor controllers (Curtis Instruments, Magneti Marelli).
+
+
+IMU/ INS:
+
+
+Product: MEMS IMU or tactical INS for navigation robustness.
+Company: VectorNav; TDK/InvenSense; Honeywell (MIL).
+Description: High-rate attitude sensing; INS improves GNSS-denied performance.
+Power: Very few W
+Weight: 10-120 grams
+PPU: Prototype $100-$700, Small batch $200-$1200, Production $150-$900.
+MIL alternative: Honeywell HG-series IMU.
+
+
+GNSS/ RTK:
+
+
+Product: GNSS receiver (RTK-capable) with anti-spoof options.
+Company: u-blox F9 series; Septentrio; NovAtel (MIL).
+Description: Positioning and navigation; RTK for cm-level accuracy where needed.
+Power: Very few W
+Weight: 10-60 grams
+PPU: Prototype $100-$400, Small batch $150-$700, Production $80-$400.
+MIL alternative: Septentrio AsteRx-F; NovAtel OEM7.
+
+
+Payload: EO/IR Gimbal or Sensor Pod:
+
+
+Product: Micro EO/IR gimbal or plug-and-play sensor pod.
+Company: FLIR/Teledyne (small modules); Hanwha (small payloads); commercial vendors.
+Description: Stabilized imaging for ISR; options for zoom, IR, or lightweight multispectral sensors.
+Power: 5-40 W
+Weight: 50-700 grams
+PPU: Prototype $500-$6,000, Small batch $800-$12,000, Production $600-$8,000.
+MIL alternative: FLIR defense micro-gimbals.
+
+
+Communications/ Datalink:
+
+
+Product: Encrypted LOS datalink and backup mesh radio.
+Company: Persistent Systems; L3Harris; commercial mesh radios.
+Description: Telemetry, command, and video downlink with fallback options for degraded
+comms.
+Power: 5-30 W
+Weight: 50-400 grams
+PPU: Prototype $500-$4000, Small batch $1000-$12000, Production $800-$8000.
+MIL alternative: L3Harris AN-series or Persistent Systems MIL variants.
+
+
+Health Logger/ Black-box:
+
+
+Product: Encrypted SSD recorder/ flight data logger.
+Company: Industrial SSD vendors; Infineon TPM; SEAKR/ Curtiss-Wright (MIL).
+Description: Secure logging of telemetry, sensor feeds, and forensics data.
+Power: Very few W
+Weight: 50-300 grams
+PPU: Prototype $150-$800, Small batch $200-$1200, Production $150-$900.
+MIL alternative: Mil-grade flight data recorders.
+
+
+Mechanical/ Mounting/ Quick-release:
+
+
+Product: Vibration mounts, quick-release payload plates, EMI shielding.
+Company: Lord Corp; Amphenol; TE Connectivity; custom fabricators.
+Description: Secure mounting, vibration isolation, and robust connectors for field
+interchangeability.
+Power: N/A
+Weight: 50-400 grams (kit).
+PPU: Prototype $50-$300, Small batch $80-$700, Production $50-$500.
+MIL alternative: Mil-spec mounts and connectors.
+
+
+Optional: Counter-UAS / Interceptor Kit (non-offensive detection only):
+
+
+Product: Spectrum sensor, RF detector, optional kinetic interceptor payloads require
+legal/operational clearance.
+Company: Rohde & Schwarz (sensors); specialized integrators.
+Description: RF detection for situational awareness; interceptor kits are specialized and
+regulated.
+Power: variable
+Weight: variable
+PPU: highly variable; procure via certified vendors.
+MIL alternative: National EW/C-UAS integrators (LIG Nex1, Hanwha).
+
+
+Typical tactical quadcopters provide short-range ISR (hover/stare) with excellent agility and
+low-altitude sensing, but endurance is limited compared with fixed-wing platforms.
+
+
+For attritable or swarm roles, choose simpler airframes and lower-cost avionics; for ISR prioritize robust mission computer, stabilized camera, and GNSS/INS fusion.
